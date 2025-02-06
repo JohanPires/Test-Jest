@@ -41,7 +41,7 @@ export class GildedRose {
     return this.items;
   }
 
-  updateAgedBrie(item: Item) {
+  updateAgedBrie(item) {
     if (item.quality < 50) {
       item.quality++;
     }
@@ -52,7 +52,7 @@ export class GildedRose {
     }
   }
 
-  updateBackstagePass(item: Item) {
+  updateBackstagePass(item) {
     if (item.quality < 50) {
       item.quality++;
       if (item.sellIn < 11) {
@@ -69,9 +69,9 @@ export class GildedRose {
     }
   }
 
-  updateSulfuras(item: Item) {}
+  updateSulfuras(item) {}
 
-  updateNormalItem(item: Item) {
+  updateNormalItem(item) {
     if (item.quality > 0) {
       item.quality--;
     }
@@ -81,7 +81,7 @@ export class GildedRose {
       item.quality--;
     }
   }
-  updateConjured(item: Item) {
+  updateConjured(item) {
     if (item.quality > 0) {
       item.quality--;
       item.quality--;
